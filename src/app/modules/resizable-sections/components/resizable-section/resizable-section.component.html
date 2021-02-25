@@ -1,8 +1,12 @@
 <div class="section-container">
   <span class="section-title">{{section.id}}</span>
-  <button class="top-button btn btn-primary btn-sm"
-    (click)="emitAddSection(ADD_POSITIONS.TOP)">Add Section</button>
+  <button class="top-button btn btn-light btn-sm"
+    (click)="emitAddSection(ADD_POSITIONS.TOP)">
+    <img src="https://icons.getbootstrap.com/assets/icons/chevron-expand.svg"/>
+  </button>
   {{section.id}}
-  <button class="bottom-button btn btn-primary btn-sm"
-          (click)="emitAddSection(ADD_POSITIONS.BOTTOM)">Add Section</button>
+  <button class="bottom-button btn btn-light btn-sm"
+          (click)="emitAddSection(ADD_POSITIONS.BOTTOM)">
+    <img src="https://icons.getbootstrap.com/assets/icons/chevron-expand.svg"/>
+  </button>
 </div>

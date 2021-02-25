@@ -9,7 +9,7 @@ $section-border:  $blue;
   background: $section-background;
   position: relative;
   border-radius: 10px;
-  background: #f1f1f1;
+  background: #d5f3ff;
   .top-button, .bottom-button, .section-title{
     display: none;
   }
@@ -37,58 +37,4 @@ $section-border:  $blue;
     bottom:-10px;
     left:calc(50% - 40px);
   }
-}
-
-
-
-
-
-.rectangle {
-  position: relative;
-  top: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 150px;
-  background-color: #fd4140;
-  border: solid 1px #121621;
-  color: #121621;
-  margin: auto;
-}
-
-mwlResizable {
-  box-sizing: border-box; // required for the enableGhostResize option to work
-}
-
-.resize-handle-top,
-.resize-handle-bottom {
-  position: absolute;
-  height: 5px;
-  cursor: row-resize;
-  width: 100%;
-}
-
-.resize-handle-top {
-  top: 0;
-}
-
-.resize-handle-bottom {
-  bottom: 0;
-}
-
-.resize-handle-left,
-.resize-handle-right {
-  position: absolute;
-  height: 100%;
-  cursor: col-resize;
-  width: 5px;
-}
-
-.resize-handle-left {
-  left: 0;
-}
-
-.resize-handle-right {
-  right: 0;
 }
