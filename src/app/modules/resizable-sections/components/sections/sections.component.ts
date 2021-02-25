@@ -3,11 +3,11 @@ import {ADD_POSITIONS, ISection} from '../../shared/constants';
 
 
 @Component({
-  selector: 'app-resizable-sections',
-  templateUrl: './resizable-sections.component.html',
-  styleUrls: ['./resizable-sections.component.scss']
+  selector: 'app-sections',
+  templateUrl: './sections.component.html',
+  styleUrls: ['./sections.component.scss']
 })
-export class ResizableSectionsComponent {
+export class SectionsComponent {
   sections: Array<ISection> = [{id: this.getRandomId()}, {id: this.getRandomId()}];
 
   getRandomId(length?: number): string {

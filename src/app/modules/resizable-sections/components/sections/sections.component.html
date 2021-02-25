@@ -1,8 +1,8 @@
 <div class="container">
-  <app-resizable-section
+  <app-section
     *ngFor="let section of sections; let index=index"
     [section]="section"
     [sectionIndex]="index"
     (onAddSection)="addSection($event)"
-  ></app-resizable-section>
+  ></app-section>
 </div>

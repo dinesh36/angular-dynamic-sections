@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import {ResizableSectionComponent} from './modules/resizable-sections/components/resizable-section/resizable-section.component';
-import {ResizableSectionsComponent} from './modules/resizable-sections/components/resizable-sections/resizable-sections.component';
+import {SectionComponent} from './modules/resizable-sections/components/section/section.component';
+import {SectionsComponent} from './modules/resizable-sections/components/sections/sections.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResizableSectionComponent,
-    ResizableSectionsComponent,
+    SectionComponent,
+    SectionsComponent,
   ],
   imports: [
     BrowserModule,
