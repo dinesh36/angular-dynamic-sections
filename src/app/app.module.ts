@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {ResizableSectionComponent} from './modules/resizable-sections/components/resizable-section/resizable-section.component';
+import {ResizableSectionsComponent} from './modules/resizable-sections/components/resizable-sections/resizable-sections.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ResizableSectionComponent,
+    ResizableSectionsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

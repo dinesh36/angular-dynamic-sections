@@ -1,0 +1,94 @@
+$blue: #017bfe;
+$section-background: yellow;
+$section-title-background: $blue;
+$section-border:  $blue;
+
+.section-container{
+  margin-bottom: 50px;
+  padding: 30px;
+  background: $section-background;
+  position: relative;
+  border-radius: 10px;
+  background: #f1f1f1;
+  .top-button, .bottom-button, .section-title{
+    display: none;
+  }
+  &:hover{
+    border: 2px solid $section-border;
+    .top-button, .bottom-button, .section-title{
+      display: block;
+    }
+  }
+  .section-title{
+    position: absolute;
+    top:0px;
+    left:0px;
+    color: white;
+    background: $section-title-background;
+  }
+  .top-button, .bottom-button{
+    position: absolute;
+  }
+  .top-button{
+    top:-10px;
+    left:calc(50% - 40px);
+  }
+  .bottom-button{
+    bottom:-10px;
+    left:calc(50% - 40px);
+  }
+}
+
+
+
+
+
+.rectangle {
+  position: relative;
+  top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  background-color: #fd4140;
+  border: solid 1px #121621;
+  color: #121621;
+  margin: auto;
+}
+
+mwlResizable {
+  box-sizing: border-box; // required for the enableGhostResize option to work
+}
+
+.resize-handle-top,
+.resize-handle-bottom {
+  position: absolute;
+  height: 5px;
+  cursor: row-resize;
+  width: 100%;
+}
+
+.resize-handle-top {
+  top: 0;
+}
+
+.resize-handle-bottom {
+  bottom: 0;
+}
+
+.resize-handle-left,
+.resize-handle-right {
+  position: absolute;
+  height: 100%;
+  cursor: col-resize;
+  width: 5px;
+}
+
+.resize-handle-left {
+  left: 0;
+}
+
+.resize-handle-right {
+  right: 0;
+}

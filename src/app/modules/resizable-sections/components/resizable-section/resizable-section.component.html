@@ -1,0 +1,8 @@
+<div class="section-container">
+  <span class="section-title">{{section.id}}</span>
+  <button class="top-button btn btn-primary btn-sm"
+    (click)="emitAddSection(ADD_POSITIONS.TOP)">Add Section</button>
+  {{section.id}}
+  <button class="bottom-button btn btn-primary btn-sm"
+          (click)="emitAddSection(ADD_POSITIONS.BOTTOM)">Add Section</button>
+</div>
