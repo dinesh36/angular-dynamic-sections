@@ -5,4 +5,5 @@ export const ADD_POSITIONS = Object.freeze({
 
 export interface ISection {
   id: string;
+  imagePath?: string;
 }

@@ -8,7 +8,9 @@ import {ADD_POSITIONS, ISection} from '../../shared/constants';
   styleUrls: ['./sections.component.scss']
 })
 export class SectionsComponent {
-  sections: Array<ISection> = [{id: this.getRandomId()}, {id: this.getRandomId()}];
+  sections: Array<ISection> = [
+    {id: this.getRandomId(), imagePath: 'http://www.meissl.com/media/images/8f24db1f/schweiz.jpg'},
+  ];
 
   getRandomId(length?: number): string {
     length = length || 30;

@@ -1,7 +1,8 @@
-<div class="section-container">
+<div class="section-container" [ngStyle]="{'background-image': 'url(' + section.imagePath + ')', 'background-position': 'center'}"
+>
   <span class="section-title">{{section.id}}</span>
   <button class="top-button btn btn-light btn-sm"
-    (click)="emitAddSection(ADD_POSITIONS.TOP)">
+    (click)="emitAddSection(ADD_POSITIONS.TOP)" >
     <img src="https://icons.getbootstrap.com/assets/icons/chevron-expand.svg"/>
   </button>
   {{section.id}}
